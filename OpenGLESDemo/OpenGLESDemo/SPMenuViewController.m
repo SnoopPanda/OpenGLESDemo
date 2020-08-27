@@ -8,6 +8,7 @@
 
 #import "SPMenuViewController.h"
 #import "SPDrawImageViewController.h"
+#import "SPGLSLDrawViewController.h"
 
 @interface SPMenuViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *menuList;
@@ -25,8 +26,24 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    SPDrawImageViewController *vc = [[SPDrawImageViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    switch (indexPath.row) {
+        case 0:
+        {
+            SPDrawImageViewController *vc = [[SPDrawImageViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 1:
+        {
+            SPGLSLDrawViewController *vc = [[SPGLSLDrawViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -62,7 +79,8 @@
     if (!_dataArray) {
 
         _dataArray = @[
-            @"绘制图片到屏幕"
+            @"GLKBaseEffect绘制图片到屏幕",
+            @"GLSL绘制图片到屏幕"
         ];
     }
     return _dataArray;

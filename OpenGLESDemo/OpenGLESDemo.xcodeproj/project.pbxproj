@@ -15,6 +15,10 @@
 		A08A248C24F79EF200215E0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A08A248B24F79EF200215E0C /* main.m */; };
 		A08A249424F7A0BC00215E0C /* SPDrawImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08A249324F7A0BC00215E0C /* SPDrawImageViewController.m */; };
 		A08A249624F7A28100215E0C /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A08A249524F7A28000215E0C /* test.jpeg */; };
+		A08A249B24F7AFD500215E0C /* SPGLSLDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08A249A24F7AFD500215E0C /* SPGLSLDrawViewController.m */; };
+		A08A249E24F7BA9D00215E0C /* SPGLSLDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = A08A249D24F7BA9D00215E0C /* SPGLSLDrawView.m */; };
+		A08A24A124F7BDD800215E0C /* shaderv.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A08A249F24F7BDD800215E0C /* shaderv.vsh */; };
+		A08A24A224F7BDD800215E0C /* shaderf.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A08A24A024F7BDD800215E0C /* shaderf.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,12 @@
 		A08A249224F7A0BC00215E0C /* SPDrawImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDrawImageViewController.h; sourceTree = "<group>"; };
 		A08A249324F7A0BC00215E0C /* SPDrawImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPDrawImageViewController.m; sourceTree = "<group>"; };
 		A08A249524F7A28000215E0C /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
+		A08A249924F7AFD500215E0C /* SPGLSLDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPGLSLDrawViewController.h; sourceTree = "<group>"; };
+		A08A249A24F7AFD500215E0C /* SPGLSLDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPGLSLDrawViewController.m; sourceTree = "<group>"; };
+		A08A249C24F7BA9D00215E0C /* SPGLSLDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPGLSLDrawView.h; sourceTree = "<group>"; };
+		A08A249D24F7BA9D00215E0C /* SPGLSLDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPGLSLDrawView.m; sourceTree = "<group>"; };
+		A08A249F24F7BDD800215E0C /* shaderv.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderv.vsh; sourceTree = "<group>"; };
+		A08A24A024F7BDD800215E0C /* shaderf.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderf.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,12 @@
 				A08A248024F79EF000215E0C /* SPMenuViewController.m */,
 				A08A249224F7A0BC00215E0C /* SPDrawImageViewController.h */,
 				A08A249324F7A0BC00215E0C /* SPDrawImageViewController.m */,
+				A08A249924F7AFD500215E0C /* SPGLSLDrawViewController.h */,
+				A08A249A24F7AFD500215E0C /* SPGLSLDrawViewController.m */,
+				A08A249C24F7BA9D00215E0C /* SPGLSLDrawView.h */,
+				A08A249D24F7BA9D00215E0C /* SPGLSLDrawView.m */,
+				A08A24A024F7BDD800215E0C /* shaderf.fsh */,
+				A08A249F24F7BDD800215E0C /* shaderv.vsh */,
 				A08A248224F79EF000215E0C /* Main.storyboard */,
 				A08A248524F79EF200215E0C /* Assets.xcassets */,
 				A08A248724F79EF200215E0C /* LaunchScreen.storyboard */,
@@ -136,8 +152,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08A24A124F7BDD800215E0C /* shaderv.vsh in Resources */,
 				A08A248924F79EF200215E0C /* LaunchScreen.storyboard in Resources */,
 				A08A249624F7A28100215E0C /* test.jpeg in Resources */,
+				A08A24A224F7BDD800215E0C /* shaderf.fsh in Resources */,
 				A08A248624F79EF200215E0C /* Assets.xcassets in Resources */,
 				A08A248424F79EF000215E0C /* Main.storyboard in Resources */,
 			);
@@ -150,6 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08A249B24F7AFD500215E0C /* SPGLSLDrawViewController.m in Sources */,
+				A08A249E24F7BA9D00215E0C /* SPGLSLDrawView.m in Sources */,
 				A08A248124F79EF000215E0C /* SPMenuViewController.m in Sources */,
 				A08A249424F7A0BC00215E0C /* SPDrawImageViewController.m in Sources */,
 				A08A247B24F79EF000215E0C /* AppDelegate.m in Sources */,
