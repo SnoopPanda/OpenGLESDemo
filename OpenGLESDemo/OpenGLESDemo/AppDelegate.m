@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "SPMenuViewController.h"
+#import "SPViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
       
-    UIViewController *vc = [[SPMenuViewController alloc] init];
+    UIViewController *vc = [[SPViewController alloc] init];
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
       
     self.window.rootViewController = navVC;
